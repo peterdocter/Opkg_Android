@@ -1,0 +1,65 @@
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+
+*.orig
+*.rej
+*.mergebackup
+*.[oa]
+*~
+*.*.swp
+
+Makefile
+Makefile.in
+# o_0
+Makefile.in.in
+!tests/regress/Makefile
+
+# The local aclocal.m4 file
+aclocal.m4
+
+# The output of the configure script
+conf/
+config.guess
+config.log
+config.status
+config.sub
+
+# Auto-generated config header and timestamp
+config.h
+config.h.in
+stamp-h1
+
+# The configure script itself
+configure
+
+
+# Various scripts used for libtool and the like
+install-sh
+libtool
+ltmain.sh
+missing
+depcomp
+
+# opkg stuff
+libopkg.pc
+
+autom4te.cache/
+
+# Binaries
+*.la
+*.lo
+*.o
+*.so
+.libs/
+.deps/
+src/opkg
+tests/libopkg_test
+
+# Man pages
+man/*.1
+
+# Python
+*.pyc
+__pycache__
